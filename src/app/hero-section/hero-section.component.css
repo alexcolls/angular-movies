@@ -1,0 +1,32 @@
+.hero-container {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 1;
+  filter: brightness(100%);
+  overflow: hidden;
+}
+
+.trailer-title {
+  color:aliceblue;
+  position: absolute;
+  top: 90%;
+  font-size: x-large;
+  padding-left: 3rem;
+}

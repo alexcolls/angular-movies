@@ -1,0 +1,10 @@
+.main-container {
+  background: rgba(0, 0, 0, 0.781);
+  /* padding-top: 1rem;
+  padding-bottom: 1rem; */
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}

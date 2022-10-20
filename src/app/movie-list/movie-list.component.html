@@ -1,0 +1,8 @@
+<h1 (click)="toggleExpand()">{{listTitle}}</h1>
+<div class="movies-container" (click)="closeExpand()" [ngClass]="expand ? 'expand-movies' : ''">
+  <a *ngFor="let movie of movies" href="/movie/{{movie.id}}">
+    <div class="img-container">
+      <img src="{{movie.image}}" alt="{{movie.title}}"/>
+    </div>
+  </a>
+</div>
