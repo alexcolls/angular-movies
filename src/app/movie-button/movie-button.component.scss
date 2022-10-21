@@ -1,0 +1,122 @@
+
+aside {
+	position: fixed;
+	width: 100%;//50vh;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: linear-gradient(200deg, #1ba8d3, #0a2410e1, #1ba8d3);
+	opacity: 0;
+	visibility: hidden;
+	transition: all .5s ease;
+	z-index: 999;
+}
+.open {
+	opacity: 1;
+	visibility: visible;
+  z-index: 999;
+}
+nav {
+	text-align: center;
+	height: 95vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	ul {
+		margin-top: 20px;
+		padding: 0;
+		list-style: none;
+		li {
+			align-items: center;
+			flex: 1;
+			line-height: 20vh;
+			a {
+        font-size: 1rem;
+				transition: all 0.5s ease;
+				display: block;
+				text-decoration: none;
+				color: rgba(255, 255, 255, .5);
+				&:hover {
+					color: rgba(255, 255, 255, .9);
+					transform: scale(1.1);
+					&:before {
+						visibility: visible;
+						transform: scaleX(1);
+					}
+				}
+				&:before {
+					content: "";
+					position: absolute;
+					width: 50%;
+					height: 2px;
+					bottom: 0;
+					left: 25%;
+					background: white;
+					visibility: hidden;
+					transform: scaleX(0);
+					transition: all 0.3s ease-in-out 0s;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 600px) {
+  nav ul li a {
+    font-size: 3em;
+  }
+}
+button {
+	position: absolute;
+	z-index: 22;
+	letter-spacing: 2px;
+	padding: 15px 40px;
+	background: rgba(0, 0, 0, 0.568);
+	border: 1px solid #72d3f3;
+	color: white;
+	border-radius: 10px;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+	&:hover {
+		font-weight: 700;
+		color: #72d3f3;
+		background: rgba(23, 46, 48, 0.568);
+
+	}
+}
+.close {
+	position: fixed;
+	top: 40px;
+	right: 60px;
+	color: white;
+	z-index: 3;
+	cursor: pointer;
+  span,
+  span:before,
+  span:after {
+    border-radius: 4px;
+    height: 5px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+  }
+  span {
+    background: transparent;
+  }
+  span:before {
+  transform: rotate(45deg);
+  }
+  span:after {
+  transform: rotate(-45deg);
+  }
+}
+.outer-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 85px;
+	height: 85px;
+	cursor: pointer;
+}
+

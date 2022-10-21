@@ -10,6 +10,8 @@ import { MainSectionComponent } from './main-section/main-section.component';
 import { MovieMenuComponent } from './movie-menu/movie-menu.component';
 import { MoviePageComponent } from './movie-page/movie-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { MovieCardComponent } from './movie-card/movie-card.component';
+import { MovieButtonComponent } from './movie-button/movie-button.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { MainPageComponent } from './main-page/main-page.component';
     MainSectionComponent,
     MovieMenuComponent,
     MoviePageComponent,
-    MainPageComponent
+    MainPageComponent,
+    MovieCardComponent,
+    MovieButtonComponent
   ],
   imports: [
     BrowserModule,
