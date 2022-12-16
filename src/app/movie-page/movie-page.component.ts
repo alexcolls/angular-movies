@@ -14,8 +14,7 @@ export class MoviePageComponent implements OnInit {
   title = '';
   poster =  '';
   synopsis = '';
-
-
+  
   constructor(private router: Router, private apiService: ApiClientService) { }
 
   ngOnInit(): void {

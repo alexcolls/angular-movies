@@ -7,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
+  muteVid: boolean = false;
+
   constructor() { }
 
+  muteVideo() {
+    this.muteVid = !this.muteVid;
+  }
   ngOnInit(): void {
   }
 

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ApiClientService {
 
-  rootUrl = 'http://movied.herokuapp.com/'
+  rootUrl = 'http://cw-api.eu-west-3.elasticbeanstalk.com/movied/'
 
   constructor(private http: HttpClient) { }
 

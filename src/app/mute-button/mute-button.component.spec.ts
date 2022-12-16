@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MovieButtonComponent } from './movie-button.component';
+import { MuteButtonComponent } from './mute-button.component';
 
-describe('MovieButtonComponent', () => {
-  let component: MovieButtonComponent;
-  let fixture: ComponentFixture<MovieButtonComponent>;
+describe('MuteButtonComponent', () => {
+  let component: MuteButtonComponent;
+  let fixture: ComponentFixture<MuteButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MovieButtonComponent ]
+      declarations: [ MuteButtonComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MovieButtonComponent);
+    fixture = TestBed.createComponent(MuteButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -11,7 +11,7 @@ import { MovieMenuComponent } from './movie-menu/movie-menu.component';
 import { MoviePageComponent } from './movie-page/movie-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { MovieCardComponent } from './movie-card/movie-card.component';
-import { MovieButtonComponent } from './movie-button/movie-button.component';
+import { MuteButtonComponent } from './mute-button/mute-button.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { MovieButtonComponent } from './movie-button/movie-button.component';
     MoviePageComponent,
     MainPageComponent,
     MovieCardComponent,
-    MovieButtonComponent
+    MuteButtonComponent,
   ],
   imports: [
     BrowserModule,

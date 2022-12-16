@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { trailers } from './trailers';
 
 @Component({
@@ -7,6 +7,9 @@ import { trailers } from './trailers';
   styleUrls: ['./hero-section.component.css']
 })
 export class HeroSectionComponent implements OnInit {
+
+  @Input() 
+  muteVid: boolean = true;
 
   time: string = '0';
   title: string = '';

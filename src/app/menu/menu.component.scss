@@ -76,11 +76,12 @@ button {
 	border: 1px solid #72d3f3;
 	color: white;
 	border-radius: 10px;
-	transition: all .4s ease-in-out;
+	transition: all .2s ease-in-out;
 	cursor: pointer;
 	&:hover {
 		font-weight: 700;
 		color: #72d3f3;
+		border: 2px solid #72d3f3;
 		background: rgba(23, 46, 48, 0.568);
 
 	}

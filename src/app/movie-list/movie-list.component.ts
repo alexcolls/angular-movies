@@ -30,7 +30,6 @@ export class MovieListComponent implements OnInit {
   iterateMovies(response: any[]) {
     const imageUrl = 'https://image.tmdb.org/t/p/w300/';
     for (const res of response) {
-      console.log(res);
       const movie: Movie = { 
         id: res.id,
         title: res.original_title,
